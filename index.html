@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Informa que o idioma principal da página é português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página seja responsiva em dispositivos móveis -->
+    <title>Cadastro de Usuário</title> <!-- Título que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Div principal para centralizar e estilizar o conteúdo -->
+        <h2>Cadastro</h2> <!-- Cabeçalho da página -->
+        <form id="cadastroForm"> <!-- Formulário de cadastro com id para manipulação em JS -->
+            <label for="nome">Nome:</label> <!-- Rótulo do campo nome -->
+            <input type="text" id="nome" name="nome"> <!-- Campo de texto para o nome -->
+            <span class="erro" id="erroNome"></span> <!-- Área para exibir mensagem de erro do nome -->
+
+            <label for="email">E-mail:</label> <!-- Rótulo do campo e-mail -->
+            <input type="email" id="email" name="email"> <!-- Campo de e-mail com validação básica do tipo -->
+            <span class="erro" id="erroEmail"></span> <!-- Mensagem de erro do e-mail -->
+
+            <label for="senha">Senha:</label> <!-- Rótulo do campo senha -->
+    <div class="password-container">
+            <input type="password" id="senha" name="senha"> <!-- Campo de senha (oculta os caracteres) -->
+
+            <button type="button" class="toggle-senha" onclick="toggleSenha('senha')">Mostrar Senha</button>
+    </div>
+            <span class="erro" id="erroSenha"></span> <!-- Mensagem de erro da senha -->
+
+            <button type="submit">Cadastrar</button> <!-- Botão de envio do formulário -->
+        </form>
+        <p id="mensagemSucesso" class="sucesso"></p> <!-- Parágrafo para mostrar mensagem de sucesso -->
+    </div>
+
+    <script src="script.js"></script> <!-- Importa o JavaScript que valida e processa o cadastro -->
+</body>
+</html>

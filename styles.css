@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    background-color: #f4f4f4;      /* Cor de fundo cinza claro */
+    display: flex;                  /* Usa flexbox para centralizar */
+    justify-content: center;        /* Centraliza horizontalmente */
+    align-items: center;            /* Centraliza verticalmente */
+    height: 100vh;                  /* Altura total da tela */
+}
+
+.container {
+    background: white;                             /* Fundo branco para o bloco */
+    padding: 20px;                                  /* Espaçamento interno */
+    border-radius: 8px;                              /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);         /* Sombra suave */
+    width: 300px;                                    /* Largura fixa */
+    text-align: center;                              /* Centraliza o texto */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espaço inferior */
+}
+
+input {
+    width: 75%;           /* Ocupa toda a largura do container */
+    padding: 8px;          /* Espaçamento interno */
+    margin: 5px 0;         /* Margem vertical */
+    border: 1px solid #ccc;/* Borda cinza */
+    border-radius: 4px;    /* Bordas arredondadas */
+}
+
+button {
+    width: 100%;               /* Largura total */
+    padding: 10px;             /* Altura interna */
+    background-color: #28a745; /* Fundo verde */
+    color: white;              /* Texto branco */
+    border: none;              /* Sem borda */
+    border-radius: 4px;        /* Bordas arredondadas */
+    cursor: pointer;           /* Cursor de mão ao passar */
+    margin-top: 10px;          /* Margem superior */
+}
+
+button:hover {
+    background-color: #218838; /* Cor mais escura ao passar o mouse */
+}
+
+.erro {
+    color: red;        /* Texto vermelho */
+    font-size: 12px;   /* Fonte pequena */
+    height: 15px;      /* Espaço fixo para manter layout */
+    display: block;    /* Ocupa uma linha inteira */
+}
+
+.sucesso {
+    color: green;      /* Texto verde */
+    margin-top: 10px;  /* Espaçamento superior */
+}
+
+.password-container {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-senha:hover {
+
+    background-color: #0069d9;
+}
+
+.toggle-senha {
+
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
